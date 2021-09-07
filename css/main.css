@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import url('reset.css');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url(../font/Helvetica_Light.ttf) format('ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url(../font/Helvetica.ttf) format('ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url(../font/Helvetica_Bold.ttf) format('ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'HelveticaRoundedB';
+  src: url(../font/Helvetica_Rounded_Bold.ttf) format('ttf');
+}
+/* Font, Color
+  카페24써라운드 나눔스퀘어 Helvetica Helvetica_rounded
+  #00abcd #00aaff #00ccff
+*/
+
+/* Common */
+body {font-family: 'Helvetica', 'nanumsquare', 'sans-serif'}
+#skill img {width: 90px;}
+
+.skip_nav a {display: block;position: absolute;top: -60px;left: 0;right: 0;background: #00ccff;text-align: center;line-height: 60px;font-weight: bold;font-size: 20px;color: #FFF}
+.skip_nav a:focus {top: 0}
+.util .scrollTop {display: block;position: fixed;right: 0;top: 0;width: 36px;border-left: 2px solid #000;border-bottom: 2px solid #000;border-radius: 0 0 0 4px;background: #00ccff;line-height: 26px;font-weight: bold;text-align: center;color: #FFF}
+.util a {display: block;position: fixed;right: 40px;box-sizing:border-box;bottom: 40px;width: 60px;border: 2px solid #000;border-radius:50%;background: #00ccff;line-height: 56px;text-align: center;font-weight: bold;font-size: 18px;color: #FFF;}
+
+/* Header */
