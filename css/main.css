@@ -31,15 +31,18 @@ body {overflow-x: hidden;font-family: 'Helvetica', 'nanumsquare', 'sans-serif'}
 .skip_nav a {display: block;position: absolute;top: -60px;left: 0;right: 0;background: #00ccff;text-align: center;line-height: 60px;font-weight: bold;font-size: 20px;color: #FFF}
 .skip_nav a:focus {top: 0}
 .util .scrollTop {display: block;position: fixed;right: 0;top: 0;width: 36px;border-left: 2px solid #000;border-bottom: 2px solid #000;border-radius: 0 0 0 4px;background: #0CF;line-height: 26px;font-weight: bold;text-align: center;color: #FFF}
-.util a {display: block;position: fixed;right: 40px;box-sizing:border-box;bottom: 40px;width: 60px;border: 2px solid #000;border-radius:50%;background: #0CF;line-height: 56px;text-align: center;font-weight: bold;font-size: 18px;color: #FFF;}
+.util a {display: block;position: fixed;right: 40px;box-sizing:border-box;bottom: 40px;width: 60px;border: 2px solid #000;border-radius:50%;background: #0CF;line-height: 56px;text-align: center;font-size: 18px;color: #FFF;}
 
 /* Header */
-#header {position: fixed;left: 0;top: 0;bottom: 0;width: 250px;background: #0AF;transition:all 0.4s}
+#header {position: fixed;z-index:999;left: 0;top: 0;bottom: 0;width: 250px;background: #0AF;transition:all 0.4s}
 #header.header_off {left: -250px;}
-#header button {position: absolute;top: 0;right: -40px;box-sizing:border-box;width: 40px;height: 40px;background: #0CF;border-bottom: 2px solid #000;border-right: 2px solid #000;border-radius:0 0 20px 0;}
-#header .header_inner {display: flex;flex-flow:column nowrap;justify-content: space-between;box-sizing:border-box;height: 100%;padding-top: 100px;}
+#header button {position: absolute;top: 0;right: -40px;box-sizing:border-box;width: 40px;height: 40px;background: #0CF;border-bottom: 2px solid #000;border-right: 2px solid #000;border-radius:0 0 50% 0;}
+#header .header_inner {display: flex;flex-flow:column nowrap;justify-content: space-between;box-sizing:border-box;height: 100%;padding-left: 30px;padding-top: 100px;}
 #header .header_inner span {font-family: 'HelveticaL';margin-bottom: 30px;font-weight: 300;color: #FFF;}
-#header .header_inner span b {font-family: 'Helvetica Rounded';font-size: 24px;}
+#header .header_inner span b {display: block;margin-bottom: 17px;font-family: 'Helvetica Rounded';font-size: 24px;}
+
+#gnb li a {display: block;margin-bottom: 20px;font-size: 14px;color: #FFF;}
+#gnb li b {display: block;margin-bottom: 4px;font-family: 'Helvetica Rounded';font-size: 22px;text-transform: uppercase;}
 
 /* Main_visual */
 #main .main_visual {height: 100vh;background:url(../img/main_bg.png) center top;}
