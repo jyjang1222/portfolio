@@ -34,8 +34,8 @@ body {overflow-x: hidden;font-family: 'Helvetica', 'nanumsquare', 'sans-serif'}
 .util a {display: block;position: fixed;right: 40px;box-sizing:border-box;bottom: 40px;width: 60px;border: 2px solid #000;border-radius:50%;background: #0CF;line-height: 56px;text-align: center;font-weight: bold;font-size: 18px;color: #FFF;}
 
 /* Header */
-#header {position: fixed;left: -250px;top: 0;bottom: 0;width: 250px;background: #0AF;transition:all 0.4s}
-#header.header_on {left: 0;}
+#header {position: fixed;left: 0;top: 0;bottom: 0;width: 250px;background: #0AF;transition:all 0.4s}
+#header.header_off {left: -250px;}
 #header button {position: absolute;top: 0;right: -40px;box-sizing:border-box;width: 40px;height: 40px;background: #0CF;border-bottom: 2px solid #000;border-right: 2px solid #000;border-radius:0 0 20px 0;}
 #header .header_inner {display: flex;flex-flow:column nowrap;justify-content: space-between;box-sizing:border-box;height: 100%;padding-top: 100px;}
 #header .header_inner span {font-family: 'HelveticaL';margin-bottom: 30px;font-weight: 300;color: #FFF;}
