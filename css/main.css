@@ -18,20 +18,27 @@
 }
 
 /* Font, Color
-  카페24써라운드 나눔스퀘어 'Helvetica Rounded'
-  #00abcd #00aaff #00ccff
+  'Cafe24Ssurround' 'nanumsquare' 'Helvetica Rounded'
+  #00aaff #00ccff #e8f6ff
 */
 
 /* Common */
 body {overflow-x: hidden;font-family: 'Helvetica', 'nanumsquare', 'sans-serif'}
 .container {width: 1370px;margin: 0 auto;padding-left: 250px;transition: all 0.4s;}
 .container.header_off {padding-left: 0;}
-#skill img {width: 90px;}
+#main {background: url(../img/pattern_bg.png);}
+section {padding: 60px 0;}
+section:nth-of-type(-n + 2) {border-bottom: 1px dashed #0CF;}
+section:not(#work) .section_inner {position: relative;}
+section:not(#work) h2 {position: absolute;left: -40px;top: -20px;width: 160px;line-height: 140px;background-image:url(../img/section_head.png);background-size: cover;color: #FFF;}
+section h2 {font-family: 'Helvetica Rounded';font-size: 30px;text-align: center;}
+.section_inner {box-sizing: border-box;height: 430px;border-radius:20px;background: #e8f6ff}
 
+/* Util */
 .skip_nav a {display: block;position: absolute;top: -60px;left: 0;right: 0;background: #00ccff;text-align: center;line-height: 60px;font-weight: bold;font-size: 20px;color: #FFF}
 .skip_nav a:focus {top: 0}
-.util .scrollTop {display: block;position: fixed;right: 0;top: 0;width: 36px;border-left: 2px solid #000;border-bottom: 2px solid #000;border-radius: 0 0 0 4px;background: #0CF;line-height: 26px;font-weight: bold;text-align: center;color: #FFF}
-.util a {display: block;position: fixed;right: 40px;box-sizing:border-box;bottom: 40px;width: 60px;border: 2px solid #000;border-radius:50%;background: #0CF;line-height: 56px;text-align: center;font-size: 18px;color: #FFF;}
+.util .scrollTop {display: block;position: fixed;right: 0;top: 0;z-index:999;width: 36px;border-left: 2px solid #000;border-bottom: 2px solid #000;border-radius: 0 0 0 4px;background: #0CF;line-height: 26px;font-weight: bold;text-align: center;color: #FFF}
+.util a {display: block;position: fixed;right: 40px;box-sizing:border-box;bottom: 40px;z-index:999;width: 60px;border: 2px solid #000;border-radius:50%;background: #0CF;line-height: 56px;text-align: center;font-size: 18px;color: #FFF;}
 
 /* Header */
 #header {position: fixed;z-index:999;left: 0;top: 0;bottom: 0;width: 250px;background: #0AF;transition:all 0.4s}
@@ -48,3 +55,17 @@ body {overflow-x: hidden;font-family: 'Helvetica', 'nanumsquare', 'sans-serif'}
 #main .main_visual {height: 100vh;background:url(../img/main_bg.png) center top;}
 #main .main_visual p {position: absolute;left: 50%;top: 50%;transform:translate(-50%, -50%);font-family: 'Cafe24Ssurround';font-size: 60px;color: #FFF;white-space: nowrap;}
 #main .main_visual p mark {color: #0CF}
+
+/* Profile */
+#profile .section_inner {padding: 0 110px;}
+#profile .myInfo {display: flex;justify-content: space-between;align-items: center;height: 100%;}
+#profile .myInfo .myImg {display: block;box-sizing:border-box;width: 280px;height: 280px;border: 2px solid #0AF;border-radius:50%;background: #FFF;}
+
+/* Skill */
+#skill img {width: 90px;}
+/* Project */
+#project img {width: 300px;}
+/* Work */
+#work {background: #dffbff;}
+#work ul {height: 430px;}
+/* Contact */
