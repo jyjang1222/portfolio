@@ -35,7 +35,7 @@ section h2 {font-family: 'Helvetica Rounded';font-size: 30px;text-align: center;
 .section_inner {box-sizing: border-box;height: 430px;border-radius:20px;background: #e8f6ff}
 
 /* Util */
-.skip_nav a {display: block;position: absolute;top: -60px;left: 0;right: 0;background: #00ccff;text-align: center;line-height: 60px;font-weight: bold;font-size: 20px;color: #FFF}
+.skip_nav a {display: block;position: absolute;top: -60px;left: 0;right: 0;background: #0CF;text-align: center;line-height: 60px;font-weight: bold;font-size: 20px;color: #FFF}
 .skip_nav a:focus {top: 0}
 .util .scrollTop {display: block;position: fixed;right: 0;top: 0;z-index:999;width: 36px;border-left: 2px solid #000;border-bottom: 2px solid #000;border-radius: 0 0 0 4px;background: #0CF;line-height: 26px;font-weight: bold;text-align: center;color: #FFF}
 .util a {display: block;position: fixed;right: 40px;box-sizing:border-box;bottom: 40px;z-index:999;width: 60px;border: 2px solid #000;border-radius:50%;background: #0CF;line-height: 56px;text-align: center;font-size: 18px;color: #FFF;}
@@ -60,8 +60,14 @@ section h2 {font-family: 'Helvetica Rounded';font-size: 30px;text-align: center;
 #profile .section_inner {padding: 0 110px;}
 #profile .myInfo {display: flex;justify-content: space-between;align-items: center;height: 100%;}
 #profile .myInfo .myImg {display: block;box-sizing:border-box;width: 280px;height: 280px;border: 2px solid #0AF;border-radius:50%;background: #FFF;}
-#profile .address span {font-family: 'HelveticaL';font-weight: 300;font-size: 20px;}
+#profile .address span {display: block;margin-bottom: 70px;font-family: 'HelveticaL'; font-size: 20px;}
 #profile .address span b {display: block;margin-bottom: 20px;font-family: 'nanumsquare';font-size: 24px;font-weight: 700;letter-spacing: .1em;}
+#profile .address li {margin-bottom: 20px;font-family: 'HelveticaL';font-size: 18px;}
+#profile .address li:last-child {margin-bottom: 0;}
+#profile .address li b {margin-right: 20px;font-family: 'nanumsquare';font-weight: 700;letter-spacing: .1em;}
+#profile .career li {position: relative;margin-bottom: 24px;font-size: 18px;}
+#profile .career li:last-child {margin-bottom: 0;}
+#profile .career li:before {content:'';display: block;position: absolute;left: -17px;top: 50%;transform:translateY(-50%) rotate(45deg);width: 9px;height: 9px;background: #0AF;}
 
 /* Skill */
 #skill img {width: 90px;}
