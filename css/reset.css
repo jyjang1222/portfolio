@@ -48,4 +48,4 @@ table {
 }
 mark {background:none;}
 a {text-decoration: none;color: #000;}
-button {border: none;background: none;}
+button {border: none;background: none;font-family: inherit;cursor: pointer;}
