@@ -9,10 +9,16 @@
   <meta name="generator" content="Visual Studio Code">
   <title>준영 포트폴리오</title>
   <link rel="stylesheet" href="css/jquery.rprogessbar.min.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/jQuery.rProgressbar.js"></script>
   <script src="js/jquery.waypoints.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/jquery.fittext.js"></script>
+  <script src="js/jquery.lettering.js"></script>
+  <script src="js/jquery.textillate.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
@@ -43,7 +49,7 @@
     </header>
     <main id="main">
       <div class="main_visual">
-        <p>안녕하세요. 신입 웹퍼블리셔 <mark>준영</mark>입니다.</p>
+        <p class="tlt"  data-in-effect="rollIn" data-in-shuffle="true" data-out-effect="fadeOut" data-out-shuffle="true">안녕하세요. 신입 웹퍼블리셔 <mark>준영</mark>입니다.</p>
         <span class="scrollDown"></span>
       </div>
       <section id="profile">
@@ -107,31 +113,40 @@
         <div class="container">
           <div class="section_inner">
             <h2>Project</h2>
-            <a href="#a" class="btn_project">
+            <a href="#a" class="btn_proj">
               <ul>
+                <li class="current_proj">웹프로젝트</li>
                 <li>포트폴리오</li>
                 <li>GS그룹</li>
+                <li class="close_proj">닫기</li>
               </ul>
             </a>
-            <ul class="projects">
-              <li>
-                <ul class="project_info">
+            <div class="projects">
+              <div class="proj_intro">
+                <p>웹표준을 준수하려 노력했습니다.</p>
+                <img src="img/mockup_portfolio.png" alt="모니터">
+              </div>
+              <div class="project project1">
+                <ul class="proj_info">
                   <li>깔끔하고 시원한 블루톤 컨셉</li>
                   <li>로고 & 아이콘 SVG 직접제작</li>
                   <li>제작기간:</li>
                 </ul>
                 <img src="img/mockup_portfolio.png" alt="포트폴리오 목업">
-              </li>
-              <li>
-                <ul class="project_info">
-                  <li>깔끔하고 시원한 블루톤 컨셉</li>
-                  <li>반응형웹</li>
-                  <li>아이콘 SVG 직접제작</li>
-                  <li>제작기간:</li>
-                </ul>
-                <img src="img/mockup_gs.jpg" alt="GS그룹 목업">
-              </li>
-            </ul>
+              </div>
+              <div class="project project2">
+                <div class="projInfo_wrap">
+                  <ul class="proj_info">
+                    <li>gs</li>
+                    <li>반응형웹</li>
+                    <li>아이콘 SVG 직접제작</li>
+                    <li>제작기간:</li>
+                  </ul>
+                  <a href="https://jyjang1222.github.io/gs/" target="_blank">보러가기</a>
+                </div>
+                <img src="img/mockup_gs.png" alt="GS그룹 목업">
+              </div>
+            </div><!-- //projects -->
           </div><!-- //section_inner -->
         </div><!-- //container -->
       </section><!-- //#project -->
@@ -139,8 +154,8 @@
         <div class="container">
           <h2>Work</h2>
           <ul>
-            <li></li>
-            <li></li>
+            <li><a href="img/work_medipreview.png" data-lightbox="image-1" data-title="메디프리뷰 전단지"></a></li>
+            <li><a href="img/work_calendar.png"  data-lightbox="image-2" data-title="겨울 캘린더 디자인"></a></li>
             <li></li>
           </ul>
         </div><!-- //container -->
