@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url('reset.css');
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
-@import url('http://db.onlinewebfonts.com/c/22f7211901f8339f9435e67eea82cf99?family=Helvetica+Rounded');
+
 @font-face {
   font-family: 'Cafe24Ssurround';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
@@ -15,6 +15,10 @@
 @font-face {
   font-family: 'HelveticaL';
   src: url(../font/HelveticaL.woff) format('woff');
+}
+@font-face {
+  font-family: 'Helvetica Rounded';
+  src: url(../font/HelveticaRoundedB.woff) format('woff');
 }
 
 /* Font, Color
