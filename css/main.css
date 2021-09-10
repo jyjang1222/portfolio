@@ -101,6 +101,7 @@ section h2 {font-family: 'Helvetica Rounded';font-size: 30px;text-align: center;
 #project .btn_proj ul:before {content:'';display: block;position: absolute;right: 16px;top: 14px;z-index: 999;width: 12px;height: 7px;background-image:url(../img/proj_chevron.png);background-size: 12px 7px;transition:all 0.3s;}
 #project .btn_proj.proj_on ul:before {transform-origin : center;transform:perspective(300px) rotateX(180deg);}
 #project .projInfo_wrap a {display: block;font-size: 16px;}
+#project .btn_proj li:not(.current_proj):hover {color: #0AF;}
 /* Work */
 #work {position: relative;padding: 60px 0 110px;background: #dffbff;}
 #work h2 {padding-bottom: 20px;}
