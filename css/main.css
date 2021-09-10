@@ -86,7 +86,7 @@ section h2 {font-family: 'Helvetica Rounded';font-size: 30px;text-align: center;
 .percentCount i {font-size: 18px;}
 
 /* Project */
-#project .section_inner {padding: 0 240px 0 150px;}
+#project .section_inner {padding: 0 240px 0 200px;}
 #project .projects>div {display: flex;justify-content:space-between;}
 #project .projects>div[class*=project] {display: none;}
 #project img {width: 350px;}
