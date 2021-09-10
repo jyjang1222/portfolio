@@ -50,7 +50,7 @@
                 }, {
                     step: function(x) {
                         if (options.ShowProgressCount) {
-                            $(el).find(".percentCount").text(Math.round(x) + "%");
+                            $(el).find(".percentCount").html(Math.round(x) + "<i>%</i>");
                         }
                     },
                     duration: options.duration
