@@ -1,4 +1,6 @@
 $(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow"); 
+
   $('.btn_header').click(function() {
     $('#header, .container').toggleClass('header_off')
   })
@@ -67,7 +69,7 @@ $(function() {
     $('html').stop().animate({scrollTop: menu[menu_idx]}, 800);
   })//GNB클릭 이벤트
 
-  
+
   var elm = ".sec";
 
   $(elm).each(function (index) {
