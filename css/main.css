@@ -27,7 +27,7 @@
 */
 
 /* Common */
-body {overflow-x: hidden;font-family: 'Helvetica', 'NanumSquare', 'sans-serif'}
+body {overflow: hidden;font-family: 'Helvetica', 'NanumSquare', 'sans-serif'}
 .container {width: 1370px;margin: 0 auto;padding-left: 250px;transition: all 0.4s;}
 .container.header_off {padding-left: 0;}
 #main {background: url(../img/pattern_bg.png);}
