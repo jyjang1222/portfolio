@@ -1,5 +1,5 @@
 $(function() {
-  $("html, body").animate({ scrollTop: 0 }, "slow"); 
+  $('html, body').animate({ scrollTop: 0 }, 'slow'); 
 
   $('.btn_header').click(function() {
     $('#header, .container').toggleClass('header_off')
