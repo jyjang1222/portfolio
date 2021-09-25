@@ -38,12 +38,12 @@
           //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
                 .then(function(response) {
                   console.log('SUCCESS!', response.status, response.text);
-		  window.alert('메일 보내기에 성공했습니다.');
+                  window.alert('메일 보내기에 성공했습니다.');
                 }, function(error) {
                   console.log('FAILED...', error);
-		  window.alert('메일 보내기에 실패했습니다.');
+                  window.alert('메일 보내기에 실패했습니다.');
                 });
-                  
+
           });
           
       });
@@ -56,19 +56,19 @@
   </div>
   <div class="util">
     <span class="scrollTop">0<i>%</i></span>
-    <a href="#">TOP</a>
+    <a href="#a" class="top">TOP</a>
   </div>
   <div id="wrap">
     <header id="header">
       <div class="header_inner">       
         <nav>
           <ul id="gnb">
-            <li><a href="#"><b>Home</b>홈</a></li>
-            <li><a href="#profile"><b>Profile</b>프로필</a></li>
-            <li><a href="#skill"><b>Skill</b>스킬</a></li>
-            <li><a href="#project"><b>Project</b>프로젝트</a></li>
-            <li><a href="#work"><b>Work</b>작업</a></li>
-            <li><a href="#contact"><b>Contact</b>연락</a></li>
+            <li><a href="#a"><b>home</b>홈</a></li>
+            <li><a href="#a"><b>profile</b>프로필</a></li>
+            <li><a href="#a"><b>skill</b>스킬</a></li>
+            <li><a href="#a"><b>project</b>프로젝트</a></li>
+            <li><a href="#a"><b>work</b>작업</a></li>
+            <li><a href="#a"><b>contact</b>연락</a></li>
           </ul>
         </nav>
         <span><b>Portfolio</b>Web Publisher</span>
@@ -76,11 +76,11 @@
       <button class="btn_header"></button>
     </header>
     <main id="main">
-      <div class="main_visual">
+      <div class="main_visual sec">
         <h1 class="tlt"  data-in-effect="rollIn" data-in-shuffle="true" data-out-effect="fadeOut" data-out-shuffle="true">안녕하세요. 신입 웹퍼블리셔 준영입니다.</h1>
         <span class="scrollDown"></span>
       </div>
-      <section id="profile">
+      <section id="profile" class="sec">
         <div class="container">
           <div class="section_inner">
             <h2>Profile</h2>
@@ -102,7 +102,7 @@
           </div><!-- //section_inner -->
         </div><!-- //container -->
       </section><!-- //#about -->
-      <section id="skill">
+      <section id="skill" class="sec">
         <div class="container">
           <div class="section_inner">
             <h2>Skill</h2>
@@ -135,7 +135,7 @@
           </div><!-- //section_inner-->
         </div><!-- //container -->
       </section><!-- //#skill -->
-      <section id="project">
+      <section id="project" class="sec">
         <div class="container">
           <div class="section_inner">
             <h2>Project</h2>
@@ -171,7 +171,7 @@
           </div><!-- //section_inner -->
         </div><!-- //container -->
       </section><!-- //#project -->
-      <section id="work">
+      <section id="work" class="sec">
         <div class="container">
           <h2>Work</h2>
           <ul>
@@ -181,7 +181,7 @@
           </ul>
         </div><!-- //container -->
       </section><!-- //#work -->
-      <section id="contact">
+      <section id="contact" class="sec">
         <div class="container">
           <div class="section_inner">
             <h2>Contact</h2>
