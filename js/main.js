@@ -3,6 +3,21 @@ $(function() {
     $('#header, .container').toggleClass('header_off')
   })
 
+  $(window).resize(function() {
+    var win_wid = $(window).width();
+
+    if(win_wid <= 1600) {
+      $('#header, .container').addClass('header_off')
+    }
+  })
+
+  $(window).scroll(function() {
+    var per = ($(window).scrollTop() / ($(document).height() - $(window).height())) * 100;
+    var res = Math.floor(per);
+
+    $('.scrollTop').html(res + '<i>%</i>')
+  })
+
   var progress = ['90', '90', '60', '70', '50', '70']
   
   for(var i = 1; i <= 6; i++) {
@@ -29,15 +44,14 @@ $(function() {
     $('.current_proj').text(proj_title)
     $('.projects>div').hide()
     $('.projects>div').eq(proj_idx).css('display', 'flex')
-    $('.close_proj').text('웹프로젝트')
+    $('.close_proj').text('포트폴리오')
   })
   $('.close_proj').click(function() {
-    $('.current_proj').text('웹프로젝트')
+    $('.current_proj').text('포트폴리오')
     $(this).text('닫기')
     $('.projects>div').hide()
     $('.projects>div').eq(0).css('display', 'flex')
   }) //프로젝트 리스트 클릭
 
   $('.tlt').textillate();
-
 }) //ready
