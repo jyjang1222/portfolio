@@ -53,5 +53,17 @@ $(function() {
     $('.projects>div').eq(0).css('display', 'flex')
   }) //프로젝트 리스트 클릭
 
-  $('.tlt').textillate();
+  $('.tlt').textillate(); //h1 텍스트 플러그인
+
+  $('.util .top').click(function() {
+    $('html').stop().animate({scrollTop: 0}, 800);
+  }) //TOP클릭 이벤트
+
+  $('#gnb li').click(function() {
+    var menu = [0, $('#profile').offset().top, $('#skill').offset().top, $('#project').offset().top, $('#work').offset().top, $('#contact').offset().top];
+
+    var menu_idx = $(this).index();
+    
+    $('html').stop().animate({scrollTop: menu[menu_idx]}, 800);
+  })//GNB클릭 이벤트
 }) //ready
