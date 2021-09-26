@@ -133,7 +133,7 @@ section h2 {font-family: 'Helvetica Rounded';font-size: 30px;text-align: center;
   #profile .myInfo .myImg_addr_wrap {width: 100%;justify-content: center;}
   #profile .myInfo .career {height: auto;align-self: flex-start;}
 
-  #skill .section_inner {height: 600px;padding: 0;padding-left: 40px;}
+  #skill .section_inner {height: 600px;padding: 0 0 0 40px;}
   #skill ul {justify-content:center;align-content: space-around;}
   #skill ul li {width: 40%;}
 
