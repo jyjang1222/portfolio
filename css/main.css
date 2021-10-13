@@ -66,7 +66,7 @@ section h2 {font-family: 'Helvetica Rounded';font-size: 30px;text-align: center;
 #profile .section_inner {padding: 0 110px;}
 #profile .myInfo .myImg_addr_wrap {display: flex;align-items:center;}
 #profile .myInfo {display: flex;justify-content: space-between;align-items: center;height: 100%;}
-#profile .myInfo .myImg {display: block;box-sizing:border-box;width: 280px;height: 280px;margin-right: 100px;border: 2px solid #0AF;border-radius:50%;background: #FFF;}
+#profile .myInfo .myImg {display: block;box-sizing:border-box;width: 280px;height: 280px;margin-right: 100px;border: 2px solid #0AF;border-radius:50%;background-image: url(../img/myImg.jpg);background-position: center top -650px;}
 #profile .address span {display: block;margin-bottom: 70px;font-family: 'HelveticaL'; font-size: 20px;}
 #profile .address span b {display: block;margin-bottom: 20px;font-family: 'NanumSquare';font-size: 24px;font-weight: 700;letter-spacing: .1em;}
 #profile .address li {margin-bottom: 20px;font-family: 'HelveticaL';font-size: 18px;}
